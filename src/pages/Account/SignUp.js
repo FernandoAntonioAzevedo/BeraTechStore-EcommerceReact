@@ -116,7 +116,9 @@ const SignUp = () => {
         zip
       ) {
         setSuccessMsg(
-          `Hello dear ${clientName}, Welcome you to OREBI Admin panel. We received your Sign up request. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
+          `Olá querido(a) ${clientName}, Bem-vindo ao painel de administração da Bera Tech Store. 
+          Recebemos sua solicitação de inscrição. Estamos processando para validar seu acesso. Até lá, 
+          fique conectado e assistência adicional será enviada a você por e-mail em ${email}`
         );
         setClientName("");
         setEmail("");
@@ -138,9 +140,9 @@ const SignUp = () => {
           </Link>
           <div className="flex flex-col gap-1 -mt-1">
             <h1 className="font-titleFont text-xl font-medium">
-              Get started for free
+              Comece gratuitamente
             </h1>
-            <p className="text-base">Create your account to access more</p>
+            <p className="text-base">Crie sua conta para acessar mais</p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
             <span className="text-green-500 mt-1">
@@ -148,7 +150,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Get started fast with OREBI
+                comece já com a Bera Tech Store
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -161,7 +163,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Access all OREBI services
+                Acesse todos os serviços
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -174,7 +176,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Trusted by online Shoppers
+                Seus dados levados a sério!
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -183,16 +185,16 @@ const SignUp = () => {
           </div>
           <div className="flex items-center justify-between mt-10">
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-              © OREBI
+              © Bera Tech Store
             </p>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-              Terms
+              Termos
             </p>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-              Privacy
+              Privacidade
             </p>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-              Security
+              Segurança
             </p>
           </div>
         </div>
@@ -216,20 +218,20 @@ const SignUp = () => {
           <form className="w-full lgl:w-[500px] h-screen flex items-center justify-center">
             <div className="px-6 py-4 w-full h-[96%] flex flex-col justify-start overflow-y-scroll scrollbar-thin scrollbar-thumb-primeColor">
               <h1 className="font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-2xl mdl:text-3xl mb-4">
-                Create your account
+                Crie sua conta
               </h1>
               <div className="flex flex-col gap-3">
                 {/* client name */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Full Name
+                    Nome Completo:
                   </p>
                   <input
                     onChange={handleName}
                     value={clientName}
                     className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
                     type="text"
-                    placeholder="eg. John Doe"
+                    placeholder="Seu nome e Sobrenome"
                   />
                   {errClientName && (
                     <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
@@ -241,7 +243,7 @@ const SignUp = () => {
                 {/* Email */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Work Email
+                    Seu melhor email:
                   </p>
                   <input
                     onChange={handleEmail}
@@ -260,14 +262,14 @@ const SignUp = () => {
                 {/* Phone Number */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Phone Number
+                    Telefone:
                   </p>
                   <input
                     onChange={handlePhone}
                     value={phone}
                     className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
                     type="text"
-                    placeholder="008801234567891"
+                    placeholder="(041) 99999-9999"
                   />
                   {errPhone && (
                     <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
@@ -279,7 +281,7 @@ const SignUp = () => {
                 {/* Password */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Password
+                    Senha:
                   </p>
                   <input
                     onChange={handlePassword}
@@ -298,7 +300,7 @@ const SignUp = () => {
                 {/* Address */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Address
+                    Endereço:
                   </p>
                   <input
                     onChange={handleAddress}
@@ -317,7 +319,7 @@ const SignUp = () => {
                 {/* City */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    City
+                    Cidade:
                   </p>
                   <input
                     onChange={handleCity}
@@ -336,7 +338,7 @@ const SignUp = () => {
                 {/* Country */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Country
+                    País:
                   </p>
                   <input
                     onChange={handleCountry}
@@ -355,7 +357,7 @@ const SignUp = () => {
                 {/* Zip code */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Zip/Postal code
+                    CEP/Código Postal
                   </p>
                   <input
                     onChange={handleZip}
@@ -379,9 +381,9 @@ const SignUp = () => {
                     type="checkbox"
                   />
                   <p className="text-sm text-primeColor">
-                    I agree to the OREBI{" "}
-                    <span className="text-blue-500">Terms of Service </span>and{" "}
-                    <span className="text-blue-500">Privacy Policy</span>.
+                    Eu concordo com os{" "}
+                    <span className="text-blue-500">Termos de Serviço </span>e{" "}
+                    <span className="text-blue-500">Privacidade</span>.
                   </p>
                 </div>
                 <button
@@ -392,13 +394,13 @@ const SignUp = () => {
                       : "bg-gray-500 hover:bg-gray-500 hover:text-gray-200 cursor-none"
                   } w-full text-gray-200 text-base font-medium h-10 rounded-md hover:text-white duration-300`}
                 >
-                  Create Account
+                  Criar conta
                 </button>
                 <p className="text-sm text-center font-titleFont font-medium">
-                  Don't have an Account?{" "}
+                  Não tem uma conta?{" "}
                   <Link to="/signin">
                     <span className="hover:text-blue-600 duration-300">
-                      Sign in
+                      Entrar
                     </span>
                   </Link>
                 </p>

@@ -9,7 +9,7 @@ const FooterBottom = () => {
           <span className="text-md mr-[1px] mt-[2px] md:mt-0 text-center hidden md:inline-flex">
            
           </span>
-          <AiOutlineCopyright/> All Rights Reserved 2024 - <strong> Bera tech Store </strong> - Desenvolvido por 
+          <AiOutlineCopyright/> All Rights Reserved 2024  |  Desenvolvido por  |
           <a href="https://beratech.com.br/" target="_blank" rel="BeratechSistemas">
             <span className="ml-1 font-medium group-hover:text-primeColor">
               Bera Tech Sistemas
