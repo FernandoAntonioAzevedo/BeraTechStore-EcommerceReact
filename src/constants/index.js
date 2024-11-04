@@ -22,7 +22,7 @@ export const navBarList = [
   },
   {
     _id: 1002,
-    title: "Categoria",
+    title: "Categorias",
     link: "/shop",
   },
   {
